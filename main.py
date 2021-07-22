@@ -15,19 +15,24 @@ def remove_punct(statement):
 def chatbot(user):
   while user:
     if user == 'quit':
+      #ends program
       print(random.choice(psychobabble_responses[user]))
       break
 
     else:
+      #iterate through pattern dict to find a match with user input
       for k in psychobabble_patterns:
         if re.search(psychobabble_patterns[k], user):
+          print()
+          #print random response from corresponding list 
           print(format_response(re.match(psychobabble_patterns[k],user),random.choice(psychobabble_responses[k])))
-          user = input()
+          print()
+          user = input(' - ')
   
 
 if __name__ == "__main__":
-  user = remove_punct(input('Welcome to Eliza the ChatBot. How are you feeling today?\n(Type quit at anytime to end conversation)\n\n'))
+  user = remove_punct(input('Welcome to Eliza the ChatBot. How are you feeling today?\n(Type quit at anytime to end conversation)\n\n - '))
   chatbot(user)
-   
+
     
       
