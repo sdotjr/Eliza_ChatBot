@@ -1,5 +1,3 @@
-# Eliza_ChatBot
-
 ## Eliza is a chatbot developed at MIT in 1966 designed for therapy purposes. She is a famous piece of AI and NLP history. We're going to redesign her. Here is how she works:
 
 - Greet the user and ask them how they are
