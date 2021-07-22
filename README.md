@@ -6,9 +6,4 @@
 - Pick a random response from reference.psychobabble_responses based on which pattern matched in step 3 (must be in a function)
 - Loop through steps 1-4 until the user enters 'quit' (and give an appropriate response from psychobabble_responses['quit'] when they do)
 
-Some other requirements:
 
-The function you write to match patterns must return two values
-The (first) key from the dictionary whose pattern was a match
-The MatchObject resulting from re.match()
-The function you write to pick a random response must use the reference.format_response() function to generate an appropriately worded response
