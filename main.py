@@ -27,12 +27,12 @@ def chatbot(user):
           #print random response from corresponding list 
           print(format_response(re.search(psychobabble_patterns[k],user),random.choice(psychobabble_responses[k])))
           print()
-          user = input(' - ')
+          user = input(' - ').capitalize()
+        
   
 
 if __name__ == "__main__":
-  user = remove_punct(input('Welcome to Eliza the ChatBot. How are you feeling today?\n(Type quit at anytime to end conversation)\n\n - '))
+  user = remove_punct(input('Welcome to Eliza the ChatBot. How are you feeling today?\n(Type quit at anytime to end conversation)\n\n - ').capitalize())
   chatbot(user)
-
     
       
