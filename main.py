@@ -25,7 +25,7 @@ def chatbot(user):
         if re.search(psychobabble_patterns[k], user):
           print()
           #print random response from corresponding list 
-          print(format_response(re.match(psychobabble_patterns[k],user),random.choice(psychobabble_responses[k])))
+          print(format_response(re.search(psychobabble_patterns[k],user),random.choice(psychobabble_responses[k])))
           print()
           user = input(' - ')
   
